@@ -24,7 +24,7 @@ app.get("/cadastrar/:itemA/:itemB", function(req, res){
     const itemA = parseInt(req.params.itemA);
     const itemB = parseInt(req.params.itemB);
 
-    // Cria um novo objeto no Firebase Realtime Database
+    // Cria um novo objeto no Firebase Realtime Database subir alt
     const novoSensor = Sensor.push();
     novoSensor.set({
         temperatura: itemA,
